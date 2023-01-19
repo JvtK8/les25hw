@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <title>Les 25 huiswerk</title>
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+    <script>
+    $(document).ready(function() {
+// Invoke jQuery
+$(document).ready(function () {
+    $( "button" ).click(function ( event ) { 
+        $( "button" ).css( "background-color", "white" );
+        $( "#welkeknop" ).text("Je hebt gekozen voor knop " + event.target.id); 
+        $( "#" + event.target.id ).css("background-color", "green");
+    });
+}); 
+});
+</script>
+</head>
+<body>
+<h2 id="welkeknop">Kies een knop!</h2>
+<button id="1">1</button>
+<button id="2">2</button>
+<button id="3">3</button> 
+</body>
+</html>
